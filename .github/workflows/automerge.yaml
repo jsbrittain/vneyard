@@ -25,7 +25,7 @@ jobs:
         echo "PR Branch: $PR_BRANCH"
         echo "PR Labels: $PR_LABELS"
 
-        if [[ "$PR_AUTHOR" == "github-actions[bot]" && "$PR_BRANCH" == "update-manifest" && "$PR_LABELS" == *"auto-merge"* ]]; then
+        if [[ "$PR_AUTHOR" == "github-actions[bot]" && "$PR_BRANCH" == "update-manifest" && "$PR_LABELS" == "auto-merge" ]]; then
           echo "Auto-merge authorized."
           echo "::set-output name=continue::true"
         else
