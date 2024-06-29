@@ -36,6 +36,7 @@ jobs:
       if: env.continue == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      shell: bash
       run: |
         PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
 
