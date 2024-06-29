@@ -1,0 +1,20 @@
+name: Update manifest
+on:
+  push:
+    branches:
+      - main
+jobs:
+  update_manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Update manifest
+        run: |
+          tree > manifest.json
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: update manifest
+          title: Update manifest
+          body: Update repository manifest file
+          branch: update-manifest
