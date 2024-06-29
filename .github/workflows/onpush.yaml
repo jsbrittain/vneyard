@@ -8,6 +8,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Extract branch name
+        id: extract_branch
+        run: |
+          echo "Extracting branch name from ref: ${GITHUB_REF}"
+          # Extract the branch name from the full ref (e.g., refs/heads/main -> main)
+          BRANCH_NAME=$(echo "${GITHUB_REF#refs/heads/}")
+          echo "Branch name is $BRANCH_NAME"
+          echo "branch-name=$BRANCH_NAME" >> $GITHUB_ENV
+      - name: Check if push is from a specific branch
+        run: |
+          echo "Checking if branch is 'main'"
+          if [ "${BRANCH_NAME}" == "update=manifest" ]; then
+            echo "This push is a manifest update. Exiting..."
+            exit 1
+          else
+            echo "This push is to another branch: $BRANCH_NAME"
+          fi
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
