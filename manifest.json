@@ -1,1 +1,2155 @@
-{}
+{
+  "name": ".",
+  "type": "folder",
+  "children": [
+    {
+      "name": ".git",
+      "type": "folder",
+      "children": [
+        {
+          "name": "index",
+          "type": "file"
+        },
+        {
+          "name": "FETCH_HEAD",
+          "type": "file"
+        },
+        {
+          "name": "branches",
+          "type": "folder",
+          "children": []
+        },
+        {
+          "name": "logs",
+          "type": "folder",
+          "children": [
+            {
+              "name": "HEAD",
+              "type": "file"
+            },
+            {
+              "name": "refs",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "heads",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "main",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "remotes",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "origin",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "main",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "hooks",
+          "type": "folder",
+          "children": [
+            {
+              "name": "pre-commit.sample",
+              "type": "file"
+            },
+            {
+              "name": "commit-msg.sample",
+              "type": "file"
+            },
+            {
+              "name": "pre-rebase.sample",
+              "type": "file"
+            },
+            {
+              "name": "prepare-commit-msg.sample",
+              "type": "file"
+            },
+            {
+              "name": "pre-applypatch.sample",
+              "type": "file"
+            },
+            {
+              "name": "sendemail-validate.sample",
+              "type": "file"
+            },
+            {
+              "name": "applypatch-msg.sample",
+              "type": "file"
+            },
+            {
+              "name": "pre-push.sample",
+              "type": "file"
+            },
+            {
+              "name": "fsmonitor-watchman.sample",
+              "type": "file"
+            },
+            {
+              "name": "push-to-checkout.sample",
+              "type": "file"
+            },
+            {
+              "name": "pre-merge-commit.sample",
+              "type": "file"
+            },
+            {
+              "name": "post-update.sample",
+              "type": "file"
+            },
+            {
+              "name": "pre-receive.sample",
+              "type": "file"
+            },
+            {
+              "name": "update.sample",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "shallow",
+          "type": "file"
+        },
+        {
+          "name": "config.worktree",
+          "type": "file"
+        },
+        {
+          "name": "description",
+          "type": "file"
+        },
+        {
+          "name": "objects",
+          "type": "folder",
+          "children": [
+            {
+              "name": "info",
+              "type": "folder",
+              "children": []
+            },
+            {
+              "name": "pack",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "pack-25b82a4764993561d55cbba88d514cbf8a33ea73.rev",
+                  "type": "file"
+                },
+                {
+                  "name": "pack-25b82a4764993561d55cbba88d514cbf8a33ea73.idx",
+                  "type": "file"
+                },
+                {
+                  "name": "pack-25b82a4764993561d55cbba88d514cbf8a33ea73.pack",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HEAD",
+          "type": "file"
+        },
+        {
+          "name": "info",
+          "type": "folder",
+          "children": [
+            {
+              "name": "exclude",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "config",
+          "type": "file"
+        },
+        {
+          "name": "refs",
+          "type": "folder",
+          "children": [
+            {
+              "name": "tags",
+              "type": "folder",
+              "children": []
+            },
+            {
+              "name": "heads",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "main",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "remotes",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "origin",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "main",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "README.md",
+      "type": "file"
+    },
+    {
+      "name": ".gitignore",
+      "type": "file"
+    },
+    {
+      "name": "LICENSE",
+      "type": "file"
+    },
+    {
+      "name": ".github",
+      "type": "folder",
+      "children": [
+        {
+          "name": "workflows",
+          "type": "folder",
+          "children": [
+            {
+              "name": "onpush.yaml",
+              "type": "file"
+            },
+            {
+              "name": "automerge.yaml",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "ISSUE_TEMPLATE",
+          "type": "folder",
+          "children": [
+            {
+              "name": "new-module-request.md",
+              "type": "file"
+            },
+            {
+              "name": "bug_report.md",
+              "type": "file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "workflows",
+      "type": "folder",
+      "children": [
+        {
+          "name": "vocpl",
+          "type": "folder",
+          "children": [
+            {
+              "name": "modules",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "nextalign",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "fasta",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "s654321",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "subsample_aln.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "s123456",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "subsample_aln.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "test.snk",
+                          "type": "file"
+                        },
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "reference.fasta",
+                          "type": "file"
+                        },
+                        {
+                          "name": "genemap.gff",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "dta",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "treetime",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "s2342321",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "TreeTime_iter",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "ml_treetime.final.nwk",
+                                      "type": "file"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "s123456",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "TreeTime_iter",
+                                  "type": "folder",
+                                  "children": [
+                                    {
+                                      "name": "ml_treetime.final.nwk",
+                                      "type": "file"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "scripts",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "extract_dta.py",
+                          "type": "file"
+                        },
+                        {
+                          "name": "sort_dates.py",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "beta.metadata.tsv",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "iqtree",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "fasta",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "s2342321",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "nextalign.aligned.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "s123456",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "nextalign.aligned.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "fasttree.yaml",
+                              "type": "file"
+                            },
+                            {
+                              "name": "iqtree2.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "dag.svg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "pipeline-fasttree",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "treetime",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "ml_tree",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "s2342321",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "ml_tree.treefile",
+                                  "type": "file"
+                                },
+                                {
+                                  "name": "aligned.outgroup_added.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "s123456",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "ml_tree.treefile",
+                                  "type": "file"
+                                },
+                                {
+                                  "name": "aligned.outgroup_added.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "treetime.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "beta.metadata.tsv",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "subsample_alignment",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": ".gitignore",
+                          "type": "file"
+                        },
+                        {
+                          "name": "beta.metadata.tsv",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "fasttree",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "seeds.txt",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "fasta",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "s2342321",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "nextalign.aligned.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "s123456",
+                              "type": "folder",
+                              "children": [
+                                {
+                                  "name": "nextalign.aligned.fasta",
+                                  "type": "file"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "fasttree.yaml",
+                              "type": "file"
+                            },
+                            {
+                              "name": "iqtree2.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "dag.svg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "passthrough",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "file1",
+                              "type": "file"
+                            },
+                            {
+                              "name": "file3",
+                              "type": "file"
+                            },
+                            {
+                              "name": "file2",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "sources",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "provide_seeds",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds.txt",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "local_file",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "seeds.txt",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "test.file",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Database",
+          "type": "folder",
+          "children": [
+            {
+              "name": "sources",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "NCBI",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "download_fasta.R",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Utility",
+          "type": "folder",
+          "children": [
+            {
+              "name": "modules",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "BEASTTrace",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "file",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "data.txt",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "visualise.py",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "python.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config_test.yaml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "BEAST",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "input.xml",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Email",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "attachments",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "File_11.txt",
+                              "type": "file"
+                            },
+                            {
+                              "name": "File_1.txt",
+                              "type": "file"
+                            },
+                            {
+                              "name": "File_2.txt",
+                              "type": "file"
+                            },
+                            {
+                              "name": "Filename.txt",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "sendmail.py",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": ".gitignore",
+                      "type": "file"
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config_test.yaml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "BEASTgen",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "template",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "to_fasta.template",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "file",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "dengue.nex",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "beastgen.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "BEAUti",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "input.nex",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "beast.yml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "sources",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "LocalFolder",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "configutil.py",
+                          "type": "file"
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LinkLocalFolder",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": ".snakemake_timestamp",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CopyLocalFolder",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "2",
+                              "type": "file"
+                            },
+                            {
+                              "name": "3",
+                              "type": "file"
+                            },
+                            {
+                              "name": "1",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "CopyLocalFile",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "test.file",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Touch",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LocalFile",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "configutil.py",
+                          "type": "file"
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "LinkLocalFile",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "test.file",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "empty.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config_test.yaml",
+                          "type": "file"
+                        },
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "TutorialBuilder",
+          "type": "folder",
+          "children": [
+            {
+              "name": "modules",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Filter",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "data.csv",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "filter.py",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "ProcessGB",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Select",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "data.csv",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "select_col.py",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AggregateByMonth",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "data.csv",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "aggregate.py",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Template",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "infile.txt",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "test.sh",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Plot",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "results",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "in",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "data.csv",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "plotcol.py",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "sources",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "Download",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tutorials",
+          "type": "folder",
+          "children": [
+            {
+              "name": "modules",
+              "type": "folder",
+              "children": [
+                {
+                  "name": "RWI_ProcAndAgg",
+                  "type": "folder",
+                  "children": [
+                    {
+                      "name": "workflow",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "envs",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "conda.yaml",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "Snakefile",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "resources",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "scripts",
+                          "type": "folder",
+                          "children": [
+                            {
+                              "name": "rwi_proc_and_agg.py",
+                              "type": "file"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "config",
+                      "type": "folder",
+                      "children": [
+                        {
+                          "name": "config.yaml",
+                          "type": "file"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "manifest.json",
+      "type": "file"
+    },
+    {
+      "name": "manifest.py",
+      "type": "file"
+    }
+  ]
+}
