@@ -20,4 +20,4 @@ jobs:
           title: Update manifest
           body: Update repository manifest file
           branch: update-manifest
-          labels: auto-merge
+          labels: update-manifest, auto-merge
