@@ -1,0 +1,368 @@
+.
+├── LICENSE
+├── README.md
+├── manifest.json
+├── manifest.yaml
+└── workflows
+    ├── Database
+    │   └── sources
+    │       └── NCBI
+    │           ├── config
+    │           │   └── config.yaml
+    │           ├── resources
+    │           │   └── scripts
+    │           │       └── download_fasta.R
+    │           └── workflow
+    │               ├── Snakefile
+    │               └── envs
+    │                   └── conda.yaml
+    ├── TutorialBuilder
+    │   ├── modules
+    │   │   ├── AggregateByMonth
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── resources
+    │   │   │   │   └── scripts
+    │   │   │   │       └── aggregate.py
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── data.csv
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── conda.yaml
+    │   │   ├── Filter
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── resources
+    │   │   │   │   └── scripts
+    │   │   │   │       └── filter.py
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── data.csv
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── conda.yaml
+    │   │   ├── Plot
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── resources
+    │   │   │   │   └── scripts
+    │   │   │   │       └── plotcol.py
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── data.csv
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── conda.yaml
+    │   │   ├── ProcessGB
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   └── workflow
+    │   │   │       └── Snakefile
+    │   │   ├── Select
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── resources
+    │   │   │   │   └── scripts
+    │   │   │   │       └── select_col.py
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── data.csv
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── conda.yaml
+    │   │   └── Template
+    │   │       ├── config
+    │   │       │   └── config.yaml
+    │   │       ├── resources
+    │   │       │   └── scripts
+    │   │       │       └── test.sh
+    │   │       ├── results
+    │   │       │   └── in
+    │   │       │       └── infile.txt
+    │   │       └── workflow
+    │   │           ├── Snakefile
+    │   │           └── envs
+    │   │               └── conda.yaml
+    │   └── sources
+    │       └── Download
+    │           ├── config
+    │           │   └── config.yaml
+    │           └── workflow
+    │               └── Snakefile
+    ├── Tutorials
+    │   └── modules
+    │       └── RWI_ProcAndAgg
+    │           ├── config
+    │           │   └── config.yaml
+    │           ├── resources
+    │           │   └── scripts
+    │           │       └── rwi_proc_and_agg.py
+    │           └── workflow
+    │               ├── Snakefile
+    │               └── envs
+    │                   └── conda.yaml
+    ├── Utility
+    │   ├── modules
+    │   │   ├── BEAST
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── input.xml
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── conda.yml
+    │   │   ├── BEASTTrace
+    │   │   │   ├── config
+    │   │   │   │   ├── config.yaml
+    │   │   │   │   └── config_test.yaml
+    │   │   │   ├── results
+    │   │   │   │   └── file
+    │   │   │   │       └── data.txt
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       ├── envs
+    │   │   │       │   └── python.yaml
+    │   │   │       └── scripts
+    │   │   │           └── visualise.py
+    │   │   ├── BEASTgen
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── results
+    │   │   │   │   ├── file
+    │   │   │   │   │   └── dengue.nex
+    │   │   │   │   └── template
+    │   │   │   │       └── to_fasta.template
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── beastgen.yaml
+    │   │   ├── BEAUti
+    │   │   │   ├── config
+    │   │   │   │   └── config.yaml
+    │   │   │   ├── results
+    │   │   │   │   └── in
+    │   │   │   │       └── input.nex
+    │   │   │   └── workflow
+    │   │   │       ├── Snakefile
+    │   │   │       └── envs
+    │   │   │           └── beast.yml
+    │   │   └── Email
+    │   │       ├── config
+    │   │       │   ├── config.yaml
+    │   │       │   └── config_test.yaml
+    │   │       ├── results
+    │   │       │   └── attachments
+    │   │       │       ├── File_1.txt
+    │   │       │       ├── File_11.txt
+    │   │       │       ├── File_2.txt
+    │   │       │       └── Filename.txt
+    │   │       └── workflow
+    │   │           ├── Snakefile
+    │   │           └── scripts
+    │   │               └── sendmail.py
+    │   └── sources
+    │       ├── CopyLocalFile
+    │       │   ├── config
+    │       │   │   └── config.yaml
+    │       │   ├── results
+    │       │   │   └── in
+    │       │   │       └── test.file
+    │       │   └── workflow
+    │       │       └── Snakefile
+    │       ├── CopyLocalFolder
+    │       │   ├── config
+    │       │   │   └── config.yaml
+    │       │   ├── results
+    │       │   │   └── in
+    │       │   │       ├── 1
+    │       │   │       ├── 2
+    │       │   │       └── 3
+    │       │   └── workflow
+    │       │       └── Snakefile
+    │       ├── LinkLocalFile
+    │       │   ├── config
+    │       │   │   ├── config.yaml
+    │       │   │   └── config_test.yaml
+    │       │   ├── results
+    │       │   │   └── in
+    │       │   │       └── test.file
+    │       │   └── workflow
+    │       │       ├── Snakefile
+    │       │       └── envs
+    │       │           └── empty.yaml
+    │       ├── LinkLocalFolder
+    │       │   ├── config
+    │       │   │   └── config.yaml
+    │       │   ├── results
+    │       │   │   └── in
+    │       │   └── workflow
+    │       │       └── Snakefile
+    │       ├── LocalFile
+    │       │   ├── config
+    │       │   │   └── config.yaml
+    │       │   └── workflow
+    │       │       ├── Snakefile
+    │       │       └── configutil.py
+    │       ├── LocalFolder
+    │       │   ├── config
+    │       │   │   └── config.yaml
+    │       │   └── workflow
+    │       │       ├── Snakefile
+    │       │       └── configutil.py
+    │       └── Touch
+    │           ├── config
+    │           │   └── config.yaml
+    │           └── workflow
+    │               └── Snakefile
+    └── vocpl
+        ├── modules
+        │   ├── dta
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── resources
+        │   │   │   └── beta.metadata.tsv
+        │   │   ├── results
+        │   │   │   ├── seeds
+        │   │   │   │   └── seeds.txt
+        │   │   │   └── treetime
+        │   │   │       ├── s123456
+        │   │   │       │   └── TreeTime_iter
+        │   │   │       │       └── ml_treetime.final.nwk
+        │   │   │       └── s2342321
+        │   │   │           └── TreeTime_iter
+        │   │   │               └── ml_treetime.final.nwk
+        │   │   ├── scripts
+        │   │   │   ├── extract_dta.py
+        │   │   │   └── sort_dates.py
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       └── envs
+        │   │           └── conda.yaml
+        │   ├── fasttree
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── dag.svg
+        │   │   ├── results
+        │   │   │   ├── fasta
+        │   │   │   │   ├── s123456
+        │   │   │   │   │   └── nextalign.aligned.fasta
+        │   │   │   │   └── s2342321
+        │   │   │   │       └── nextalign.aligned.fasta
+        │   │   │   └── seeds
+        │   │   │       └── seeds.txt
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       └── envs
+        │   │           ├── fasttree.yaml
+        │   │           └── iqtree2.yaml
+        │   ├── iqtree
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── dag.svg
+        │   │   ├── results
+        │   │   │   ├── fasta
+        │   │   │   │   ├── s123456
+        │   │   │   │   │   └── nextalign.aligned.fasta
+        │   │   │   │   └── s2342321
+        │   │   │   │       └── nextalign.aligned.fasta
+        │   │   │   └── seeds
+        │   │   │       └── seeds.txt
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       └── envs
+        │   │           ├── fasttree.yaml
+        │   │           └── iqtree2.yaml
+        │   ├── nextalign
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── resources
+        │   │   │   ├── genemap.gff
+        │   │   │   └── reference.fasta
+        │   │   ├── results
+        │   │   │   ├── fasta
+        │   │   │   │   ├── s123456
+        │   │   │   │   │   └── subsample_aln.fasta
+        │   │   │   │   └── s654321
+        │   │   │   │       └── subsample_aln.fasta
+        │   │   │   └── seeds
+        │   │   │       └── seeds.txt
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       ├── envs
+        │   │       │   └── conda.yaml
+        │   │       └── test.snk
+        │   ├── passthrough
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── results
+        │   │   │   └── in
+        │   │   │       ├── file1
+        │   │   │       ├── file2
+        │   │   │       └── file3
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       └── envs
+        │   │           └── conda.yaml
+        │   ├── pipeline-fasttree
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   └── workflow
+        │   │       └── Snakefile
+        │   ├── subsample_alignment
+        │   │   ├── config
+        │   │   │   └── config.yaml
+        │   │   ├── resources
+        │   │   │   └── beta.metadata.tsv
+        │   │   ├── results
+        │   │   │   └── in
+        │   │   │       └── seeds.txt
+        │   │   └── workflow
+        │   │       ├── Snakefile
+        │   │       └── envs
+        │   │           └── conda.yaml
+        │   └── treetime
+        │       ├── config
+        │       │   └── config.yaml
+        │       ├── resources
+        │       │   └── beta.metadata.tsv
+        │       ├── results
+        │       │   ├── ml_tree
+        │       │   │   ├── s123456
+        │       │   │   │   ├── aligned.outgroup_added.fasta
+        │       │   │   │   └── ml_tree.treefile
+        │       │   │   └── s2342321
+        │       │   │       ├── aligned.outgroup_added.fasta
+        │       │   │       └── ml_tree.treefile
+        │       │   └── seeds
+        │       │       └── seeds.txt
+        │       └── workflow
+        │           ├── Snakefile
+        │           └── envs
+        │               └── treetime.yaml
+        └── sources
+            ├── local_file
+            │   ├── config
+            │   │   └── config.yaml
+            │   ├── resources
+            │   │   └── seeds.txt
+            │   ├── test.file
+            │   └── workflow
+            │       └── Snakefile
+            └── provide_seeds
+                ├── config
+                │   └── config.yaml
+                ├── resources
+                │   └── seeds.txt
+                └── workflow
+                    ├── Snakefile
+                    └── envs
+                        └── conda.yaml
+
+210 directories, 155 files
