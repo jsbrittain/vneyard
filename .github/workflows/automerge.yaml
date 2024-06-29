@@ -1,10 +1,12 @@
 name: Auto-Merge PRs
+
 on:
-  push:
-    branches: [main]
   pull_request:
-    branches: [main]
-    types: [opened, synchronize, reopened, labeled]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
 
 jobs:
   auto-merge:
@@ -14,39 +16,50 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Check if PR is from GitHub Actions and correct branch
+    - name: Check if PR has auto-merge label and is from correct author
       id: check-pr
       run: |
         PR_AUTHOR=$(jq --raw-output .pull_request.user.login "$GITHUB_EVENT_PATH")
-        PR_BRANCH=$(jq --raw-output .pull_request.head.ref "$GITHUB_EVENT_PATH")
         PR_LABELS=$(jq --raw-output '.pull_request.labels | map(.name) | join(",")' "$GITHUB_EVENT_PATH")
 
         echo "PR Author: $PR_AUTHOR"
-        echo "PR Branch: $PR_BRANCH"
         echo "PR Labels: $PR_LABELS"
 
-        if [[ "$PR_AUTHOR" == "github-actions[bot]" && "$PR_BRANCH" == "update-manifest" && "$PR_LABELS" == "auto-merge" ]]; then
-          echo "Auto-merge authorized."
-          echo "::set-output name=continue::true"
+        if [[ "$PR_AUTHOR" == "github-actions[bot]" && "$PR_LABELS" == *"auto-merge"* ]]; then
+          echo "continue=true" >> $GITHUB_ENV
         else
-          echo "Auto-merge rejected."
-          echo "::set-output name=continue::false"
+          echo "continue=false" >> $GITHUB_ENV
         fi
+
     - name: Check mergeability and auto-merge PR
+      if: env.continue == 'true'
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      if: steps.check-pr.outputs.continue == 'true'
       run: |
         PR_NUMBER=$(jq --raw-output .pull_request.number "$GITHUB_EVENT_PATH")
-        # Get the mergeable state of the PR
-        RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
-                       -H "Accept: application/vnd.github.v3+json" \
-                       "https://api.github.com/repos/${{ github.repository }}/pulls/${PR_NUMBER}")
-        MERGEABLE=$(echo "$RESPONSE" | jq --raw-output .mergeable)
-        MERGEABLE_STATE=$(echo "$RESPONSE" | jq --raw-output .mergeable_state)
 
-        echo "Mergeable: $MERGEABLE"
-        echo "Mergeable State: $MERGEABLE_STATE"
+        MAX_RETRIES=5
+        RETRY_COUNT=0
+        SLEEP_TIME=10
+
+        while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+          RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" \
+                         -H "Accept: application/vnd.github.v3+json" \
+                         "https://api.github.com/repos/${{ github.repository }}/pulls/${PR_NUMBER}")
+          MERGEABLE=$(echo "$RESPONSE" | jq --raw-output .mergeable)
+          MERGEABLE_STATE=$(echo "$RESPONSE" | jq --raw-output .mergeable_state)
+
+          echo "Mergeable: $MERGEABLE"
+          echo "Mergeable State: $MERGEABLE_STATE"
+
+          if [[ "$MERGEABLE_STATE" == "unstable" ]]; then
+            echo "Mergeable state is unstable. Retrying in $SLEEP_TIME seconds..."
+            ((RETRY_COUNT++))
+            sleep $SLEEP_TIME
+          else
+            break
+          fi
+        done
 
         if [[ "$MERGEABLE" == "true" ]]; then
           echo "PR is mergeable. Proceeding to merge."
