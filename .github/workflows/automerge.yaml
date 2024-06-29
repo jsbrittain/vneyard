@@ -32,6 +32,7 @@ jobs:
           echo "PR is not from the expected branch. Exiting."
           exit 1
         fi
+        echo "::set-output name=continue::true"
 
     - name: Check mergeability and auto-merge PR
       env:
