@@ -24,6 +24,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    # Enable tmate debugging of manually-triggered workflows if the input option was provided
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
     - name: Check if PR has auto-merge label and is from correct author
       id: check-pr
       run: |
@@ -38,11 +43,6 @@ jobs:
         else
           echo "continue=false" >> $GITHUB_ENV
         fi
-
-    # Enable tmate debugging of manually-triggered workflows if the input option was provided
-    - name: Setup tmate session
-      uses: mxschmitt/action-tmate@v3
-      if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
     - name: Check mergeability and auto-merge PR
       if: env.continue == 'true'
