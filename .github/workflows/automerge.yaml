@@ -19,21 +19,19 @@ jobs:
       run: |
         PR_AUTHOR=$(jq --raw-output .pull_request.user.login "$GITHUB_EVENT_PATH")
         PR_BRANCH=$(jq --raw-output .pull_request.head.ref "$GITHUB_EVENT_PATH")
+        PR_LABELS=$(jq --raw-output '.pull_request.labels | map(.name) | join(",")' "$GITHUB_EVENT_PATH")
 
         echo "PR Author: $PR_AUTHOR"
         echo "PR Branch: $PR_BRANCH"
+        echo "PR Labels: $PR_LABELS"
 
-        if [[ "$PR_AUTHOR" != "github-actions[bot]" ]]; then
-          echo "PR is not created by GitHub Actions bot. Exiting."
-          exit 1
+        if [[ "$PR_AUTHOR" == "github-actions[bot]" && "$PR_BRANCH" == "update-manifest" && "$PR_LABELS" == *"auto-merge"* ]]; then
+          echo "Auto-merge authorized."
+          echo "::set-output name=continue::true"
+        else
+          echo "Auto-merge rejected."
+          echo "::set-output name=continue::false"
         fi
-
-        if [[ "$PR_BRANCH" != "update-manifest" ]]; then
-          echo "PR is not from the expected branch. Exiting."
-          exit 1
-        fi
-        echo "::set-output name=continue::true"
-
     - name: Check mergeability and auto-merge PR
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
