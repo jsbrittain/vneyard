@@ -8,6 +8,13 @@ on:
       - synchronize
       - reopened
       - labeled
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
 
 jobs:
   auto-merge:
@@ -31,6 +38,11 @@ jobs:
         else
           echo "continue=false" >> $GITHUB_ENV
         fi
+
+    # Enable tmate debugging of manually-triggered workflows if the input option was provided
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v3
+      if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
 
     - name: Check mergeability and auto-merge PR
       if: env.continue == 'true'
