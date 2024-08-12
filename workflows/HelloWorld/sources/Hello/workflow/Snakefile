@@ -4,7 +4,7 @@ This is a simple example module that demonstrates how to use GRAPEVNE modules. T
 
 Params:
     Triggers:
-        Done (str): The name of the trigger file that will be touched when the module completes successfully.
+        Done (str): The name of the trigger file that will be touched when the module completes successfully
 """
 configfile: "config/config.yaml"
 outdir = config["output_namespace"]
