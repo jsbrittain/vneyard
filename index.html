@@ -219,10 +219,23 @@
     </div>
 
     <script>
-        let repositories = [
-            'kraemer-lab/vneyard'
-            // Add more repositories here as needed
-        ];
+        let repositories = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadDefaultRepositories();
+            initializeConcertina();
+            fetchData();
+        });
+
+        async function loadDefaultRepositories() {
+            try {
+                const response = await fetch('repositories.json');
+                const data = await response.json();
+                repositories = data.repositories;
+            } catch (error) {
+                console.error('Error loading default repositories:', error);
+            }
+        }
 
         function initializeConcertina() {
             const concertinaButton = document.querySelector('.concertina button');
